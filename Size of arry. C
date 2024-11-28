@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]); // Total size / Size of one element
+    printf("Size of the array: %d\n", size);
+    return 0;
+}
