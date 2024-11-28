@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str); // Note: This will stop reading at a space.
+    printf("You entered: %s\n", str);
+    return 0;
+}
