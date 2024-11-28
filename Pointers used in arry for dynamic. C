@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int add(int a, int b) { return a + b; }
+int subtract(int a, int b) { return a - b; }
+
+int main() {
+    // Array of function pointers
+    int (*operations[2])(int, int) = {add, subtract};
+    
+    int a = 10, b = 5;
+
+    printf("Addition: %d\n", operations[0](a, b));    // Calls add()
+    printf("Subtraction: %d\n", operations[1](a, b)); // Calls subtract()
+
+    return 0;
+}
