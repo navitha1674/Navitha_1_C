@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct student {
+char name [50];
+int age, gender, department ;
+float college ;
+};
+int main () {
+    struct student s1;
+    printf ("Enter name:") ;
+    scanf ("%s", s1. name) ;
+    printf ("Enter the age");
+    scanf ("%d", &s1.age) ;
+    printf ("Enter  gender") ;
+    scanf ("%d",&s1.gender);
+    printf ("Enter Department") ;
+    scanf ("%d", &s1.department) ;
+    printf ("Enter college") ;
+    scanf ("%f", s1. college) ;
+    printf ("\nStudent details\n ") ;
+    printf ("Name:%f\nage:%d\ngender:%d\ndepartment:%d\ncollege:%.2f\n");
+    printf ("Navitha ") ;
+    return 0;
+}
